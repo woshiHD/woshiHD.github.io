@@ -1,6 +1,24 @@
 html, body {
     max-width: 100%;
     overflow-x: hidden;
+    width: 100%
+}
+
+.fade-in{
+  opacity: 1;
+	animation: fadeInOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: 1s;
+}
+
+@keyframes fadeInOpacity {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
 }
 
 .background {
@@ -16,7 +34,7 @@ html, body {
 
 .name {
   color: #343F4B;
-  font-family: Roboto Slab;
+  font-family: "Roboto slab";
   font-size: 40px;
   line-height: 52px;
   width: 173px;
@@ -24,11 +42,12 @@ html, body {
   float: left;
   flex: auto;
   font-weight: bold;
+  font-family: monospace;
 }
 
 .navbar {
   color: #47525E;
-  font-family: Roboto Slab;
+  font-family: "Roboto slab";
   font-size: 20px;
   line-height: 62px;
   width: 106px;
@@ -56,11 +75,12 @@ a:hover {
   padding-top: 5px;
   padding-bottom: 57px;
   color: #47525E;
-  font-family: Roboto Slab;
+  font-family: "Roboto slab";
   font-size: 50px;
   line-height: 65px;
   text-align: center;
   font-weight: bold;
+  font-family: monospace;
 }
 
 .grid-container {
@@ -77,85 +97,128 @@ a:hover {
 
 .introspeech {
   color: #8190A5;
-  font-family: Roboto Slab;
-  font-size: 20px;
-  line-height: 30px;
+  font-family: "Roboto slab";
+  font-size: 23px;
+  line-height: 40px;
   text-align: left;
+  font-family: monospace;
+  margin: 0;
+  padding: 0;
 }
 
 .skills{
   color: #47525E;
-  font-family: Roboto Mono;
+  font-family: "Roboto Mono";
   font-size: 24px;
   line-height: 31px;
   text-align: left;
   /* font-style: italic;
   font-weight: bold; */
   padding-left: 80px;
+  font-family: monospace;
 }
 
 .listpadd{
   color: #8190A5;
-  font-family: Roboto Slab;
+  font-family: "Roboto slab";
   font-size: 20px;
   line-height: 28px;
-  width: 400px;
+  /* width: 400px; */
   text-align: left;
   padding-left: 80px;
+  font-family: monospace;
+  width:90%;
 }
 
 .happychat{
   color: #47525E;
-  font-family: Roboto Slab;
+  font-family: "Roboto slab";
   font-size: 26px;
   line-height: 33px;
   text-align: center;
+  font-family: monospace;
 }
 
 .contactme{
   padding-top: 5px;
   padding-bottom: 11px;
   color: #47525E;
-  font-family: Roboto Slab;
+  font-family: "Roboto slab";
   font-size: 50px;
   line-height: 65px;
   text-align: center;
   font-weight: bold;
+  font-family: monospace;
 }
 
 .happychatindex{
   color: #47525E;
-  font-family: Roboto Slab;
+  font-family: "Roboto slab";
   font-size: 26px;
   line-height: 33px;
   text-align: center;
+  font-family: monospace;
 }
 
 .contactmeindex{
   padding-top: 31px;
   padding-bottom: 11px;
   color: #47525E;
-  font-family: Roboto Slab;
+  font-family: : "Roboto slab";
   font-size: 50px;
   line-height: 65px;
   text-align: center;
   font-weight: bold;
-}
-
-.work{
-  width:70%;
+  font-family: monospace;
 }
 
 .foot{
   color: #47525E;
-  font-family: Roboto Slab;
+  font-family: "Roboto slab";
   font-size: 20px;
   line-height: 62px;
   text-align: center;
   flex: auto
 }
 
+.mail{
+  padding-top: 20px;
+  text-align: center;
+  font-family: "Roboto slab";
+  font-family: monospace;
+  font-weight: 100;
+}
 
+.icons{
+  padding-top: 20px;
+  text-align: center;
+  font-family: "Roboto slab";
+  font-family: monospace;
+  font-weight: 100;
+}
+
+.infomation{
+  color: #47525E;
+  font-family: "Roboto Slab";
+  font-size: 26px;
+  line-height: 33px;
+  text-align: center;
+  font-family: monospace;
+}
+
+
+.infopadd{
+  padding-top: 55px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.icon-container{
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
 
 
 @media only screen and (max-width: 890px) {
@@ -453,7 +516,7 @@ a:hover {
   }
 }
 
-@media (max-width: 1130px){
+/* @media (max-width: 1130px){
   .listpadd{
     padding-left: 0
   }
@@ -461,7 +524,7 @@ a:hover {
   .skills{
     padding-left: 0
   }
-}
+} */
 
 @media (max-width: 540px){
   .name {
@@ -486,6 +549,14 @@ a:hover {
   }
 
   .happychatindex{
+    display: none
+  }
+
+  .icons{
+    display: none
+  }
+
+  .mail{
     display: none
   }
 }
