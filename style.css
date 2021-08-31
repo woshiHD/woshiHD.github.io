@@ -1,3 +1,8 @@
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
 .background {
   background-color: #FFFFFF
 }
@@ -48,7 +53,7 @@ a:hover {
 }
 
 .aboutname {
-  padding-top: 20px;
+  padding-top: 5px;
   padding-bottom: 57px;
   color: #47525E;
   font-family: Roboto Slab;
@@ -65,7 +70,7 @@ a:hover {
 }
 
 .grid-items {
-  padding-top: 47px;
+  padding-top: 30px;
   padding-left: 41px;
   padding-right: 41px;
 }
@@ -84,8 +89,8 @@ a:hover {
   font-size: 24px;
   line-height: 31px;
   text-align: left;
-  font-style: italic;
-  font-weight: bold;
+  /* font-style: italic;
+  font-weight: bold; */
   padding-left: 80px;
 }
 
@@ -108,6 +113,25 @@ a:hover {
 }
 
 .contactme{
+  padding-top: 5px;
+  padding-bottom: 11px;
+  color: #47525E;
+  font-family: Roboto Slab;
+  font-size: 50px;
+  line-height: 65px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.happychatindex{
+  color: #47525E;
+  font-family: Roboto Slab;
+  font-size: 26px;
+  line-height: 33px;
+  text-align: center;
+}
+
+.contactmeindex{
   padding-top: 31px;
   padding-bottom: 11px;
   color: #47525E;
@@ -117,6 +141,20 @@ a:hover {
   text-align: center;
   font-weight: bold;
 }
+
+.work{
+  width:70%;
+}
+
+.foot{
+  color: #47525E;
+  font-family: Roboto Slab;
+  font-size: 20px;
+  line-height: 62px;
+  text-align: center;
+  flex: auto
+}
+
 
 
 
@@ -438,5 +476,16 @@ a:hover {
 
   .aboutname {
     padding-top: 0;
+  }
+}
+
+
+@media (min-width: 540px){
+  .contactmeindex{
+    display: none
+  }
+
+  .happychatindex{
+    display: none
   }
 }
