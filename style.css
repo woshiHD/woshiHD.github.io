@@ -221,7 +221,7 @@ a:hover {
 }
 
 
-@media only screen and (max-width: 890px) {
+@media only screen and (max-width: 1024px) {
   /* For mobile phones: */
   [class*="grid-container"] {
     display: inline;
