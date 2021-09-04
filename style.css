@@ -71,6 +71,8 @@ a:hover {
   text-decoration: underline;
 }
 
+
+
 .aboutname {
   padding-top: 5px;
   padding-bottom: 57px;
@@ -86,7 +88,7 @@ a:hover {
 .grid-container {
   box-sizing: border-box;
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
 .grid-items {
@@ -220,6 +222,61 @@ a:hover {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
+.worktext{
+  color: #47525E;
+  font-family: "Roboto Slab";
+  font-size: 20px;
+  line-height: 39px;
+  width: 602px;
+  text-align: left;
+  font-family: monospace;
+}
+
+.card{
+  background-color: #FFFFFF;
+  border: 1px solid #8492A6;
+  border-radius: 64px;
+  width: 272px;
+  height: 272px;
+}
+
+.wording{
+  color: #47525E;
+  font-family: "Roboto Slab";
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+}
+
+.icon{
+  /* width: 64px;
+  height: 64px; */
+  font-size: 64px;
+  text-align: center;
+  padding-top: 43px;
+}
+
+.fa-star{
+  color: #47525E;
+}
+
+.checked{
+  color: orange;
+}
+
+.skillscontainer{
+  /* padding-left: 156px; */
+  box-sizing: border-box;
+  display: grid;
+  /* grid-template-columns: repeat(3, minmax(0, 1fr)); */
+  margin: auto;
+  display: grid;
+  gap: 2rem;
+  justify-content: space-evenly;
+  align-content: space-evenly;
+  align-items: center;
+  justify-items: center;
+}
 
 @media only screen and (max-width: 1024px) {
   /* For mobile phones: */
@@ -526,7 +583,7 @@ a:hover {
   }
 } */
 
-@media (max-width: 540px){
+@media (max-width: 720px){
   .name {
     text-align: center;
     width: 100%;
@@ -543,7 +600,7 @@ a:hover {
 }
 
 
-@media (min-width: 540px){
+@media (min-width: 720px){
   .contactmeindex{
     display: none
   }
@@ -559,4 +616,12 @@ a:hover {
   .mail{
     display: none
   }
+}
+
+@media (min-width: 720px) {
+  .skillscontainer { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (min-width: 1024px) {
+  .skillscontainer { grid-template-columns: repeat(3, 1fr); }
 }

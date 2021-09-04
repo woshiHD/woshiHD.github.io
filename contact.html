@@ -11,21 +11,24 @@
   <title>Contact me</title>
 </head>
 
-<body class="background fade-in">
+<body class="background fade-in" onload="setTimeout(typing, 1000)">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class="header">
       <div class="name">
-        <span class="text-align: left;">Brandon</span>
+        <a class="text-align: left;" href="index.html">Brandon.</a>
       </div>
       <div class="navbar">
         <a href="contact.html">Contact</a>
       </div>
       <div class="navbar">
+        <a href="work.html">Works</a>
+      </div>
+      <div class="navbar">
         <a href="index.html">About</a>
       </div>
     </div>
-    <div class="contactme">
-      <span>Contact.</span>
+    <div class="contactme" id="contactme">
+      <span>Contact</span>
     </div>
     <div class="happychat">
       <span>Always happy to chat!</span>
@@ -34,7 +37,7 @@
       <div class="infopadd">
         <p>Feel free to check out my social media or drop me a mail if you like what you see!</p>
         <p style="padding-top: 10px;">I am avaliable on....</p>
-        <p style="padding-top: 10px;">Mail: brandonlau1406@gmail.com</p>
+        <a style="padding-top: 10px;" href="mailto:brandonlau1406@gmail.com">Mail: brandonlau1406@gmail.com</a>
         <div class="icon-container">
           <div class="col-6">
             <a href="https://www.linkedin.com/in/brandon-lau-yu-xin-77b13b153/">
@@ -61,5 +64,19 @@
     </div>
   </div>
 </body>
+
+<script>
+  var i = 0;
+  var txt = ' Me. Maybe?';
+  var speed = 50;
+
+  function typing() {
+    if (i < txt.length) {
+      document.getElementById("contactme").innerHTML += txt.charAt(i);
+      i++;
+      setTimeout(typing, speed);
+    }
+  }
+</script>
 
 </html>

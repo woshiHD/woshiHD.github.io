@@ -12,14 +12,17 @@
   <title>Brandon</title>
 </head>
 
-<body class="background fade-in">
+<body class="background fade-in" onload="setTimeout(typing, 1000)">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class="header">
       <div class="name">
-        <span class="text-align: left;">Brandon.</span>
+        <a class="text-align: left;" href="index.html">Brandon.</a>
       </div>
       <div class="navbar">
         <a href="contact.html">Contact</a>
+      </div>
+      <div class="navbar">
+        <a href="work.html">Works</a>
       </div>
       <div class="navbar">
         <a href="index.html">About</a>
@@ -27,13 +30,13 @@
     </div>
 
     <div class="aboutname">
-      <span>About, me.</span>
+      <span id="aboutme">About</span>
     </div>
     <div class="grid-container">
-      <div class="grid-items col-4">
+      <div class="grid-items col-6">
         <span class="picture">picture tbc</span>
       </div>
-      <div class="grid-items col-4">
+      <div class="grid-items col-6">
         <p class="introspeech"> Hi! My name is Brandon. I am an self driven and aspiring Cloud and DevOps Engineer.</p>
         <div style="padding: 20px;"></div>
         <p class="introspeech">I have a life-long passion and love for computers and knew since young that I would one day enter the IT industry. It's the reason why I decided to pursue a diploma in Computer Engineering.</p>
@@ -46,7 +49,7 @@
         <div style="padding: 20px;"></div>
         <p class="introspeech">I am currently working in NCS Pte Ltd as a Cloud Executive.</p>
       </div>
-      <div class="grid-items col-4 rightpadd">
+      <!-- <div class="grid-items col-4 rightpadd">
         <div class="skills">
           <span>Skills</span>
         </div>
@@ -73,7 +76,7 @@
             <span>Setup with security hardening of Window & Linux Servers</span>
           </div>
         </div>
-      </div>
+      </div> -->
     </div>
 
     <div class="contactmeindex">
@@ -106,5 +109,19 @@
     <span>© 2021 All rights reserved.</span>
   </div>
 </footer>
+
+<script>
+  var i = 0;
+  var txt = ', me.';
+  var speed = 50;
+
+  function typing() {
+    if (i < txt.length) {
+      document.getElementById("aboutme").innerHTML += txt.charAt(i);
+      i++;
+      setTimeout(typing, speed);
+    }
+  }
+</script>
 
 </html>

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/20932c92f7.js" crossorigin="anonymous"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+  </style>
+
+  <title>Brandon</title>
+</head>
+
+<body class="background fade-in" onload="setTimeout(typing, 1000)">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="header">
+      <div class="name">
+        <a class="text-align: left;" href="index.html">Brandon.</a>
+      </div>
+      <div class="navbar">
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="navbar">
+        <a href="index.html">Works</a>
+      </div>
+      <div class="navbar">
+        <a href="index.html">About</a>
+      </div>
+    </div>
+
+    <div class="aboutname">
+      <span id="aboutme">Works</span>
+    </div>
+
+    <div class="grid-container" style="padding-bottom:20px;">
+      <div class="grid-items col-6">
+        <p class="picture">picture tbc</p>
+      </div>
+      <div class="grid-items col-6">
+        <div class="worktext">
+          <p>My first job experience was as a an Intern in Singtel doing System Administration.</p>
+        </div>
+      </div>
+      <div class="grid-items col-6" style="padding-top:20px;">
+        <p class="picture">picture tbc</p>
+      </div>
+      <div class="grid-items col-6" style="padding-top:20px;">
+        <div class="worktext">
+          <p>Currently in NCS as a Cloud Executive</p>
+        </div>
+      </div>
+
+    </div>
+    <div class="skillscontainer">
+      <div class="card">
+        <div class="icon">
+          <i class="fab fa-linux"></i>
+        </div>
+        <div class="wording" style="padding-top:19px;">
+          <p>Linux System Administration</p>
+          <div class="stars" style="padding-top: 5px;">
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="icon">
+          <i class="fab fa-windows"></i>
+        </div>
+        <div class="wording" style="padding-top:19px;">
+          <p>Windows Server OS</p>
+          <div class="stars" style="padding-top: 5px;">
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="icon">
+          <i class="fab fa-html5"></i>
+        </div>
+        <div class="wording" style="padding-top:19px;">
+          <p>Web Development</p>
+          <div class="stars" style="padding-top: 5px;">
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="icon">
+          <i class="fab fa-aws"></i>
+        </div>
+        <div class="wording" style="padding-top:19px;">
+          <p>Amazon Web Services</p>
+          <div class="stars" style="padding-top: 5px;">
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span>
+            <span class="fa fa-star"></span>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="icon">
+          <i class="fas fa-infinity"></i>
+        </div>
+        <div class="wording" style="padding-top:19px;">
+          <p>Agile DevOps Practices</p>
+          <div class="stars" style="padding-top: 5px;">
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span>
+            <span class="fa fa-star"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+<script>
+  var i = 0;
+  var txt = ' & Experiences.';
+  var speed = 50;
+
+  function typing() {
+    if (i < txt.length) {
+      document.getElementById("aboutme").innerHTML += txt.charAt(i);
+      i++;
+      setTimeout(typing, speed);
+    }
+  }
+</script>
+
+</html>
