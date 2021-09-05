@@ -1,24 +1,25 @@
 html, body {
-    max-width: 100%;
-    overflow-x: hidden;
-    width: 100%
+  max-width: 100%;
+  overflow-x: hidden;
+  width: 100%
 }
 
-.fade-in{
+.fade-in {
   opacity: 1;
-	animation: fadeInOpacity;
-	animation-iteration-count: 1;
-	animation-timing-function: ease-in;
-	animation-duration: 1s;
+  animation: fadeInOpacity;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  animation-duration: 1s;
 }
 
 @keyframes fadeInOpacity {
-	0% {
-		opacity: 0;
-	}
-	100% {
-		opacity: 1;
-	}
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
 
 .background {
@@ -106,7 +107,7 @@ a:hover {
   padding: 0;
 }
 
-.skills{
+.skills {
   color: #47525E;
   font-family: "Roboto Mono";
   font-size: 24px;
@@ -118,7 +119,7 @@ a:hover {
   font-family: monospace;
 }
 
-.listpadd{
+.listpadd {
   color: #8190A5;
   font-family: "Roboto slab";
   font-size: 20px;
@@ -127,10 +128,10 @@ a:hover {
   text-align: left;
   padding-left: 80px;
   font-family: monospace;
-  width:90%;
+  width: 90%;
 }
 
-.happychat{
+.happychat {
   color: #47525E;
   font-family: "Roboto slab";
   font-size: 26px;
@@ -139,7 +140,7 @@ a:hover {
   font-family: monospace;
 }
 
-.contactme{
+.contactme {
   padding-top: 5px;
   padding-bottom: 11px;
   color: #47525E;
@@ -151,7 +152,7 @@ a:hover {
   font-family: monospace;
 }
 
-.happychatindex{
+.happychatindex {
   color: #47525E;
   font-family: "Roboto slab";
   font-size: 26px;
@@ -160,7 +161,7 @@ a:hover {
   font-family: monospace;
 }
 
-.contactmeindex{
+.contactmeindex {
   padding-top: 31px;
   padding-bottom: 11px;
   color: #47525E;
@@ -172,7 +173,7 @@ a:hover {
   font-family: monospace;
 }
 
-.foot{
+.foot {
   color: #47525E;
   font-family: "Roboto slab";
   font-size: 20px;
@@ -181,7 +182,7 @@ a:hover {
   flex: auto
 }
 
-.mail{
+.mail {
   padding-top: 20px;
   text-align: center;
   font-family: "Roboto slab";
@@ -189,7 +190,7 @@ a:hover {
   font-weight: 100;
 }
 
-.icons{
+.icons {
   padding-top: 20px;
   text-align: center;
   font-family: "Roboto slab";
@@ -197,7 +198,7 @@ a:hover {
   font-weight: 100;
 }
 
-.infomation{
+.infomation {
   color: #47525E;
   font-family: "Roboto Slab";
   font-size: 26px;
@@ -206,21 +207,20 @@ a:hover {
   font-family: monospace;
 }
 
-
-.infopadd{
+.infopadd {
   padding-top: 55px;
   padding-left: 20px;
   padding-right: 20px;
 }
 
-.icon-container{
+.icon-container {
   box-sizing: border-box;
   display: grid;
   grid-template-columns: auto auto auto;
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
-.worktext{
+.worktext {
   color: #8190A5;
   font-family: "Roboto Slab";
   font-size: 20px;
@@ -229,10 +229,10 @@ a:hover {
   font-family: monospace;
   margin: 0;
   padding: 0;
-  padding-left:20px;
+  padding-left: 20px;
 }
 
-.worktext1{
+.worktext1 {
   color: #8190A5;
   font-family: "Roboto Slab";
   font-size: 20px;
@@ -243,8 +243,7 @@ a:hover {
   padding: 0;
 }
 
-
-.card{
+.card {
   background-color: #FFFFFF;
   border: 1px solid #8492A6;
   border-radius: 64px;
@@ -252,7 +251,7 @@ a:hover {
   height: 272px;
 }
 
-.wording{
+.wording {
   color: #47525E;
   font-family: "Roboto Slab";
   font-size: 16px;
@@ -260,7 +259,7 @@ a:hover {
   text-align: center;
 }
 
-.icon{
+.icon {
   /* width: 64px;
   height: 64px; */
   font-size: 64px;
@@ -268,15 +267,15 @@ a:hover {
   padding-top: 43px;
 }
 
-.fa-star{
+.fa-star {
   color: #47525E;
 }
 
-.checked{
+.checked {
   color: orange;
 }
 
-.skillscontainer{
+.skillscontainer {
   /* padding-left: 156px; */
   box-sizing: border-box;
   display: grid;
@@ -297,16 +296,17 @@ a:hover {
 }
 
 @media only screen and (max-width: 1024px) {
+
   /* For mobile phones: */
   [class*="grid-container"] {
     display: inline;
   }
 
-  .listpadd{
+  .listpadd {
     padding-left: 0
   }
 
-  .skills{
+  .skills {
     padding-left: 0
   }
 }
@@ -389,7 +389,6 @@ a:hover {
 }
 
 @media (min-width: 768px) {
-
   .md\:col-span-2 {
     grid-column: span 2/span 2
   }
@@ -409,11 +408,9 @@ a:hover {
   .md\:p-6 {
     padding: 1.5rem
   }
-
 }
 
 @media (min-width: 1024px) {
-
   .lg\:absolute {
     position: absolute
   }
@@ -600,8 +597,7 @@ a:hover {
     padding-left: 0
   }
 } */
-
-@media (max-width: 720px){
+@media (max-width: 720px) {
   .name {
     text-align: center;
     width: 100%;
@@ -616,38 +612,7 @@ a:hover {
     padding-top: 0;
   }
 
-  .worktext{
-    padding-left: 0;
-  }
-
-  .work-items {
-    padding-top: 0;
-  }
-
-  .worktext1 {
-    padding-top: 10px;
-  }
-}
-
-
-@media (min-width: 720px){
-  .contactmeindex{
-    display: none
-  }
-
-  .happychatindex{
-    display: none
-  }
-
-  .icons{
-    display: none
-  }
-
-  .mail{
-    display: none
-  }
-
-  .worktext{
+  .worktext {
     padding-left: 0;
   }
 
@@ -659,15 +624,51 @@ a:hover {
     padding-top: 10px;
   }
 
-  .mobiledisplay{
-    display: none;
-  }
 }
 
 @media (min-width: 720px) {
-  .skillscontainer { grid-template-columns: repeat(2, 1fr); }
+  .contactmeindex {
+    display: none
+  }
+
+  .happychatindex {
+    display: none
+  }
+
+  .icons {
+    display: none
+  }
+
+  .mail {
+    display: none
+  }
+
+  .worktext {
+    padding-left: 0;
+  }
+
+  .work-items {
+    padding-top: 0;
+  }
+
+  .worktext1 {
+    padding-top: 10px;
+  }
+
+  .mobiledisplay {
+    display: none;
+  }
+
+}
+
+@media (min-width: 720px) {
+  .skillscontainer {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 @media (min-width: 1024px) {
-  .skillscontainer { grid-template-columns: repeat(3, 1fr); }
+  .skillscontainer {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
