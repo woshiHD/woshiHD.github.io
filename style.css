@@ -221,7 +221,7 @@ a:hover {
 }
 
 .worktext{
-  color: #47525E;
+  color: #8190A5;
   font-family: "Roboto Slab";
   font-size: 20px;
   line-height: 39px;
@@ -233,7 +233,7 @@ a:hover {
 }
 
 .worktext1{
-  color: #47525E;
+  color: #8190A5;
   font-family: "Roboto Slab";
   font-size: 20px;
   line-height: 39px;
@@ -288,6 +288,12 @@ a:hover {
   align-content: space-evenly;
   align-items: center;
   justify-items: center;
+}
+
+.work-items {
+  padding-top: 30px;
+  padding-left: 41px;
+  padding-right: 41px;
 }
 
 @media only screen and (max-width: 1024px) {
@@ -609,6 +615,18 @@ a:hover {
   .aboutname {
     padding-top: 0;
   }
+
+  .worktext{
+    padding-left: 0;
+  }
+
+  .work-items {
+    padding-top: 0;
+  }
+
+  .worktext1 {
+    padding-top: 10px;
+  }
 }
 
 
@@ -631,6 +649,18 @@ a:hover {
 
   .worktext{
     padding-left: 0;
+  }
+
+  .work-items {
+    padding-top: 0;
+  }
+
+  .worktext1 {
+    padding-top: 10px;
+  }
+
+  .mobiledisplay{
+    display: none;
   }
 }
 
